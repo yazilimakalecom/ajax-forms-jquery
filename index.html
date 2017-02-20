@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>AJAX ile Form İşlemleri!</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> <!-- load bootstrap via CDN -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- load jquery via CDN -->
+    <script src="islem.js"></script>
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1>AJAX Form İşlemleri</h1>
+
+    <!-- FORMUMUZ -->
+    <form action="islem.php" method="POST">
+        
+        <!-- İSİM -->
+        <div id="name-group" class="form-group">
+            <label for="name">İsim</label>
+            <input type="text" class="form-control" name="isim" placeholder="Yazılımakale.com">
+            <!-- hatalar burada gözükecek -->
+        </div>
+
+        <!-- EMAIL -->
+        <div id="email-group" class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" placeholder="info@yazilimakale.com">
+            <!-- hatalar burada gözükecek -->
+        </div>
+
+        <button type="submit" class="btn btn-success">Gönder <span class="fa fa-arrow-right"></span></button>
+
+    </form>
+
+</div>
+</body>
+</html>
